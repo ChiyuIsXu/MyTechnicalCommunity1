@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.work4.mapper.CommentMapper">
+    <insert id="publish" parameterType="Comment" >
+        insert into comments(id,auther_id,article_id,parent_id,content)
+        values(#{id}#{auther_id}#{article_id}#{parent_id},#{content});
+    </insert>
+    <update id="updateCommentnum" parameterType="String">
+        update articles set commentnum=commentnum+1 where article_id=#{article_id}
+    </update>
+    <update id="updateChild_count" parameterType="String">
+        update comments set child_count=child_count+1 where parent_id=#{parent_id}
+    </update>
+    <select id="timeRank" resultType="List">
+        select * from comments order by unix_timestamp(updatetime) desc;
+    </select>
+    <update id="addLike" parameterType="String">
+        update comments set likenum=likenum+1 where id=#{id}
+    </update>
+    <update id="cancelLike" parameterType="String">
+        update comments set likenum=likenum-1 where id=#{id}
+    </update>
+</mapper>
