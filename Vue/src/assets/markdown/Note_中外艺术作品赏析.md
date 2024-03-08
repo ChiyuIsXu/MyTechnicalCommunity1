@@ -14,6 +14,9 @@
 
 <p style='text-align:center;font-weight:bold;color: red;font-size:24px'>1950 Year</p>
 
+
+![image-20240308205550608](/src/assets/images/Bing.jpg)
+
 ## 设计的分支
 
 - 商业性质设计

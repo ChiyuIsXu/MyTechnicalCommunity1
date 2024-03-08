@@ -60,7 +60,7 @@
                 </div>
               </li>
             </ul>
-            <!-- tags    -->
+            <!-- tags -->
             <div class="entry-footer-tags">
               <a
                 href="/test-page/index.html"

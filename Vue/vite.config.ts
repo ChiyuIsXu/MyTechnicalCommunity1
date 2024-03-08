@@ -38,11 +38,11 @@ export default defineConfig(({ command, mode }) => {
           // TODO: variables loaded globally
           additionalData:
             `
-                    @import "@/assets/scss/abstracts/_variables.scss";
-                    @import "@/assets/scss/abstracts/_mixins.scss";
-                    @import "@/assets/scss/abstracts/_utilities.scss";
-                    @import "@/assets/scss/markdown.scss";
-                `,
+              @import "@/assets/scss/abstracts/_variables.scss";
+              @import "@/assets/scss/abstracts/_mixins.scss";
+              @import "@/assets/scss/abstracts/_utilities.scss";
+              @import "@/assets/scss/markdown.scss";
+            `,
         },
       },
     },

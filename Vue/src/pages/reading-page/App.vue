@@ -28,6 +28,7 @@ import ArticlePanel from "@/pages/reading-page/components/ArticlePanel/ArticlePa
 import { marked } from "marked";
 // import mdData from "@/assets/markdown/testmd.md?raw";
 import mdData from "@/assets/markdown/Note_中外艺术作品赏析.md?raw";
+// import mdData from "@/assets/markdown/test2.md?raw";
 
 const markdownContent = mdData;
 const renderedMarkdown0 = computed(() => {
@@ -83,7 +84,7 @@ const renderedMarkdown0 = computed(() => {
 }
 
 .main-area {
-  &.recommended-area {
+  .recommended-area {
     .entry-list.entry {
       .content-wrapper {
         .abstract,
@@ -92,7 +93,7 @@ const renderedMarkdown0 = computed(() => {
         }
       }
     }
-    &.recommended-entry-list.entry-last-one {
+    .recommended-entry-list.entry-last-one {
       margin-bottom: 0;
     }
   }
