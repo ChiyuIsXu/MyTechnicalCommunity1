@@ -1,0 +1,96 @@
+
+/** reset.scss */
+/** some basic resets */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // root font size 
+    font-size: 16px;
+    font-weight: normal;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    
+    line-height: 1.6;
+
+    // juejin.cn
+    font-family: 
+        -apple-system,
+        system-ui,
+        Segoe UI,
+        Roboto,
+        Ubuntu,
+        Cantarell,
+        Noto Sans,
+        sans-serif,
+        BlinkMacSystemFont,
+        Helvetica Neue,
+        PingFang SC,
+        Hiragino Sans GB,
+        Microsoft YaHei,
+        Arial!important;
+
+    background-color: $juejin-background;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/** headings */
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+/** lists */
+ul, ol{
+    list-style-type: none;
+}
+
+/** links */
+a{
+    text-decoration: none;
+    color: unset;
+    transition: $default-transition;
+
+    &:focus,
+    &:hover{
+        color: unset;
+    }
+}
+
+/** images */
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+/** forms */
+input,
+button,
+textarea,
+select{
+    font: inherit;
+    outline: 0;
+}
+
+textarea{
+    resize: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+/** tables */ 
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
