@@ -1,0 +1,1 @@
+var t=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function o(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var n={trueFunc:function(){return!0},falseFunc:function(){return!1}};const l=o(n);export{l as a,n as b,t as c,o as g};

@@ -1,0 +1,45 @@
+{
+  "folders": [
+    {
+      "name": "myTechnicalCommunity",
+      "path": "."
+    },
+    {
+      "name": "Vue",
+      "path": "Vue"
+    },
+    {
+      "name": "api",
+      "path": "Vue/src/api"
+    },
+    {
+      "name": "assets",
+      "path": "Vue/src/assets"
+    },
+    {
+      "name": "stores",
+      "path": "Vue/src/stores"
+    },
+    {
+      "name": "utils",
+      "path": "Vue/src/utils"
+    },
+    {
+      "name": "creator-page",
+      "path": "Vue/src/pages/creator-page"
+    },
+    {
+      "name": "reading-page",
+      "path": "Vue/src/pages/reading-page"
+    },
+    {
+      "name": "test-page",
+      "path": "Vue/src/pages/test-page"
+    },
+    {
+      "name": "writing-page",
+      "path": "Vue/src/pages/writing-page"
+    }
+  ],
+  "settings": {}
+}
